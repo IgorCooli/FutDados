@@ -50,8 +50,10 @@ headers: {
 .then(function (response) {
     let players = JSON.stringify(response.data);
     fs.writeFileSync('player_by_team.json',players)
-    //let rawdata = fs.readFileSync('student.json');
-    console.log(players);
+    // console.log(JSON.parse(players).api.players);
+    JSON.parse(players).api.players.forEach(element => {
+        console.log(element.player_name)
+    });
 })
 .catch(function (error) {
     // handle error
