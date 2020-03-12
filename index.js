@@ -62,7 +62,7 @@ const leagueService = require('./services/league.service.js');
 // players_by_team;
 
 
+
 let res = leagueService.getLeagueByCountryNameAndYear('brazil', '2019')
-.then((response)=>response.data)
-.catch((err)=>console.error(err))
-console.log(res);
+.then((response)=>(console.log(response.data)))
+.catch((err)=>console.error(err));
