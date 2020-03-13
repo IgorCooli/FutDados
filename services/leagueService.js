@@ -12,4 +12,4 @@ const getLeagueByCountryNameAndYear = (countryName, year) => {
       }
     )
 };
-module.exports = {getLeagueByCountryNameAndYear:getLeagueByCountryNameAndYear};
+module.exports = { getLeagueByCountryNameAndYear: getLeagueByCountryNameAndYear };
