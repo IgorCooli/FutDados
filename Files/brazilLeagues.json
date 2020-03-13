@@ -1,0 +1,196 @@
+{
+    "api": {
+        "results": 7,
+        "leagues": [
+            {
+                "league_id": 282,
+                "name": "Copa Do Brasil",
+                "type": "Cup",
+                "country": "Brazil",
+                "country_code": "BR",
+                "season": 2019,
+                "season_start": "2019-02-05",
+                "season_end": "2019-09-19",
+                "logo": "https://media.api-sports.io/leagues/282.png",
+                "flag": "https://media.api-sports.io/flags/br.svg",
+                "standings": 0,
+                "is_current": 0,
+                "coverage": {
+                    "standings": false,
+                    "fixtures": {
+                        "events": true,
+                        "lineups": true,
+                        "statistics": true,
+                        "players_statistics": true
+                    },
+                    "players": true,
+                    "topScorers": true,
+                    "predictions": true,
+                    "odds": false
+                }
+            },
+            {
+                "league_id": 357,
+                "name": "Serie A",
+                "type": "League",
+                "country": "Brazil",
+                "country_code": "BR",
+                "season": 2019,
+                "season_start": "2019-04-27",
+                "season_end": "2019-12-08",
+                "logo": "https://media.api-sports.io/leagues/357.png",
+                "flag": "https://media.api-sports.io/flags/br.svg",
+                "standings": 1,
+                "is_current": 0,
+                "coverage": {
+                    "standings": true,
+                    "fixtures": {
+                        "events": true,
+                        "lineups": true,
+                        "statistics": true,
+                        "players_statistics": true
+                    },
+                    "players": true,
+                    "topScorers": true,
+                    "predictions": true,
+                    "odds": false
+                }
+            },
+            {
+                "league_id": 358,
+                "name": "Serie B",
+                "type": "League",
+                "country": "Brazil",
+                "country_code": "BR",
+                "season": 2019,
+                "season_start": "2019-04-26",
+                "season_end": "2019-11-30",
+                "logo": "https://media.api-sports.io/leagues/358.PNG",
+                "flag": "https://media.api-sports.io/flags/br.svg",
+                "standings": 1,
+                "is_current": 0,
+                "coverage": {
+                    "standings": true,
+                    "fixtures": {
+                        "events": true,
+                        "lineups": true,
+                        "statistics": true,
+                        "players_statistics": true
+                    },
+                    "players": true,
+                    "topScorers": true,
+                    "predictions": true,
+                    "odds": false
+                }
+            },
+            {
+                "league_id": 488,
+                "name": "Brasileiro Women",
+                "type": "League",
+                "country": "Brazil",
+                "country_code": "BR",
+                "season": 2019,
+                "season_start": "2019-03-16",
+                "season_end": "2019-08-04",
+                "logo": "https://media.api-sports.io/leagues/219.png",
+                "flag": "https://media.api-sports.io/flags/br.svg",
+                "standings": 0,
+                "is_current": 0,
+                "coverage": {
+                    "standings": false,
+                    "fixtures": {
+                        "events": true,
+                        "lineups": true,
+                        "statistics": false,
+                        "players_statistics": false
+                    },
+                    "players": false,
+                    "topScorers": false,
+                    "predictions": true,
+                    "odds": false
+                }
+            },
+            {
+                "league_id": 1003,
+                "name": "Serie C",
+                "type": "League",
+                "country": "Brazil",
+                "country_code": "BR",
+                "season": 2019,
+                "season_start": "2019-04-27",
+                "season_end": "2019-10-06",
+                "logo": null,
+                "flag": "https://media.api-sports.io/flags/br.svg",
+                "standings": 1,
+                "is_current": 0,
+                "coverage": {
+                    "standings": true,
+                    "fixtures": {
+                        "events": true,
+                        "lineups": true,
+                        "statistics": false,
+                        "players_statistics": false
+                    },
+                    "players": true,
+                    "topScorers": true,
+                    "predictions": true,
+                    "odds": false
+                }
+            },
+            {
+                "league_id": 1007,
+                "name": "Serie D",
+                "type": "League",
+                "country": "Brazil",
+                "country_code": "BR",
+                "season": 2019,
+                "season_start": "2019-05-04",
+                "season_end": "2019-08-18",
+                "logo": null,
+                "flag": "https://media.api-sports.io/flags/br.svg",
+                "standings": 1,
+                "is_current": 0,
+                "coverage": {
+                    "standings": true,
+                    "fixtures": {
+                        "events": true,
+                        "lineups": true,
+                        "statistics": false,
+                        "players_statistics": false
+                    },
+                    "players": true,
+                    "topScorers": true,
+                    "predictions": true,
+                    "odds": false
+                }
+            },
+            {
+                "league_id": 1186,
+                "name": "Alagoano",
+                "type": "Cup",
+                "country": "Brazil",
+                "country_code": "BR",
+                "season": 2019,
+                "season_start": "2019-01-19",
+                "season_end": "2019-04-21",
+                "logo": null,
+                "flag": "https://media.api-sports.io/flags/br.svg",
+                "standings": 1,
+                "is_current": 0,
+                "coverage": {
+                    "standings": true,
+                    "fixtures": {
+                        "events": true,
+                        "lineups": false,
+                        "statistics": false,
+                        "players_statistics": false
+                    },
+                    "players": true,
+                    "topScorers": true,
+                    "predictions": true,
+                    "odds": false
+                }
+            }
+        ]
+    }
+}
