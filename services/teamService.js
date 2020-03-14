@@ -15,4 +15,4 @@ const getTeamsByLeagueId = (leagueId) => {
 module.exports = { getTeamsByLeagueId: getTeamsByLeagueId };
 
 
-
+// teste leo
