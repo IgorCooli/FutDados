@@ -28,19 +28,26 @@ const teamService = require('./services/teamService');
 
 // players('127');  
 
+let team = async (teamId) => {
+    await teamService.getTeamByTeamId('134')
+    .then((response)=>console.log(JSON.stringify(response.data)))
+    .catch((err)=>console.error(err))
+};
 
-let teams = async (leagueId) => {
-    await teamService.getTeamsByLeagueId(leagueId)
-        .then(function (res) {
-            console.log(res.data);
-            let data = JSON.stringify(res.data)
-            fs.writeFileSync('./Files/brazilTeams.json', data)
-        })
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })
-}
+team();
 
-teams('357');
+// let teams = async (leagueId) => {
+//     await teamService.getTeamsByLeagueId(leagueId)
+//         .then(function (res) {
+//             console.log(res.data);
+//             let data = JSON.stringify(res.data)
+//             fs.writeFileSync('./Files/brazilTeams.json', data)
+//         })
+//         .catch(function (error) {
+//             // handle error
+//             console.log(error);
+//         })
+// }
+
+// teams('357');
 //357
