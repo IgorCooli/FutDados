@@ -26,7 +26,7 @@ const teamService = require('./services/teamService');
 //         .catch((err) => console.log(err))
 // }
 
-// players('127');
+// players('127');  
 
 
 let teams = async (leagueId) => {
