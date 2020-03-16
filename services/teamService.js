@@ -30,5 +30,4 @@ const getTeamByTeamId = (teamId) => {
 };
 module.exports = { getTeamByTeamId: getTeamByTeamId };
 
-//TESTE IGOR
-// teste leo
+

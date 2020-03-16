@@ -1,0 +1,157 @@
+{
+    "api": {
+        "results": 2,
+        "players": [
+            {
+                "player_id": 10174,
+                "player_name": "Gabriel Barbosa",
+                "firstname": "Gabriel",
+                "lastname": "Barbosa Almeida",
+                "number": null,
+                "position": "Attacker",
+                "age": 24,
+                "birth_date": "30/08/1996",
+                "birth_place": "São Bernardo do Campo",
+                "birth_country": "Brazil",
+                "nationality": "Brazil",
+                "height": "176 cm",
+                "weight": "68 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 127,
+                "team_name": "Flamengo",
+                "league": "Serie A",
+                "season": "2020",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 0,
+                    "conceded": 0,
+                    "assists": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 0,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 0,
+                    "minutes_played": 0,
+                    "lineups": 0
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            },
+            {
+                "player_id": 10174,
+                "player_name": "Gabriel Barbosa",
+                "firstname": "Gabriel",
+                "lastname": "Barbosa Almeida",
+                "number": null,
+                "position": "Attacker",
+                "age": 24,
+                "birth_date": "30/08/1996",
+                "birth_place": "São Bernardo do Campo",
+                "birth_country": "Brazil",
+                "nationality": "Brazil",
+                "height": "176 cm",
+                "weight": "68 kg",
+                "injured": null,
+                "rating": null,
+                "team_id": 127,
+                "team_name": "Flamengo",
+                "league": "Carioca 1",
+                "season": "2020",
+                "captain": 0,
+                "shots": {
+                    "total": 0,
+                    "on": 0
+                },
+                "goals": {
+                    "total": 8,
+                    "conceded": 0,
+                    "assists": 0
+                },
+                "passes": {
+                    "total": 0,
+                    "key": 0,
+                    "accuracy": 0
+                },
+                "tackles": {
+                    "total": 0,
+                    "blocks": 0,
+                    "interceptions": 0
+                },
+                "duels": {
+                    "total": 0,
+                    "won": 0
+                },
+                "dribbles": {
+                    "attempts": 0,
+                    "success": 0
+                },
+                "fouls": {
+                    "drawn": 0,
+                    "committed": 0
+                },
+                "cards": {
+                    "yellow": 3,
+                    "yellowred": 0,
+                    "red": 0
+                },
+                "penalty": {
+                    "won": 0,
+                    "commited": 0,
+                    "success": 0,
+                    "missed": 0,
+                    "saved": 0
+                },
+                "games": {
+                    "appearences": 6,
+                    "minutes_played": 540,
+                    "lineups": 6
+                },
+                "substitutes": {
+                    "in": 0,
+                    "out": 0,
+                    "bench": 0
+                }
+            }
+        ]
+    }
+}
