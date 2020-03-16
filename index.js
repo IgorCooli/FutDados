@@ -18,15 +18,15 @@ const teamService = require('./services/teamService');
 
 
 
-// let players = async (teamId) => {
-//     await playersService.getPlayersByTeamId(teamId)
-//         .then((res) => {
-//             console.log(res.data)
-//         })
-//         .catch((err) => console.log(err))
-// }
+ /*let players = async (teamId) => {
+     await playersService.getPlayersByTeamId(teamId)
+         .then((res) => {
+             console.log(res.data)
+         })
+        .catch((err) => console.log(err))
+ };
 
-// players('127');  
+ players('127');*/
 
 //let team = async (teamId) => {
 //    await teamService.getTeamByTeamId('134')
@@ -70,4 +70,8 @@ const teamService = require('./services/teamService');
          })
  }
 
-player('10174','2020');
+player('10168','2019');
+
+
+
+
