@@ -5,72 +5,66 @@ const teamService = require('./services/teamService');
 
 
 
+let brazilSerieA = JSON.parse(fs.readFileSync('./Files/brazilTeamsSerieA.json'))
 
 
-// let league = async (countryName, year) => {
-//     await leagueService.getLeagueByCountryNameAndYear(countryName, year)
-//         .then((res) => (console.log(res.data)))
-//         .catch((err) => console.error(err));
-// }
-
-// league('brazil', '2019');
+let teams = []
+let team = {}
+let player = {}
+let players = []
+let playersAux = {}
 
 
+let getPlayers = async (teamId, teamName) => {
+    await playersService.getPlayersByTeamId(teamId)
+        .then(function (res) {
+            let data = res.data.api.players
+            console.log(data)
+            fs.writeFileSync(`./Files/SerieA/JogadoresPorTime/${teamName}.json`, JSON.stringify(data));
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+}
+
+brazilSerieA.api.teams.forEach(e => {
+    team = {
+        team_id: e.team_id,
+        name: e.name,
+        code: e.code,
+        logo: e.logo,
+        country: e.country,
+        is_national: e.is_national,
+        founded: e.founded,
+        venue_name: e.venue_name,
+        venue_surface: e.venue_surface,
+        venue_address: e.venue_address,
+        venue_city: e.venue_city,
+        venue_capacity: e.venue_capacity
+    }
+    teams.push(team)
+    // console.log(team)
+
+});
+
+fs.writeFileSync('./Files/SerieA/timesSerieA.json', JSON.stringify(teams))
+
+// let x = getPlayers(`${teams[0].team_id}`);
 
 
- /*let players = async (teamId) => {
-     await playersService.getPlayersByTeamId(teamId)
-         .then((res) => {
-             console.log(res.data)
-         })
-        .catch((err) => console.log(err))
- };
-
- players('127');*/
-
-//let team = async (teamId) => {
-//    await teamService.getTeamByTeamId('134')
-//    .then((response)=>console.log(JSON.stringify(response.data)))
-//    .catch((err)=>console.error(err))
-//};
-
-//team();
-
-// let teams = async (leagueId) => {
-//     await teamService.getTeamsByLeagueId(leagueId)
-//         .then(function (res) {
-//             console.log(res.data);
-//             let data = JSON.stringify(res.data)
-//             fs.writeFileSync('./Files/brazilTeams.json', data)
-//         })
-//         .catch(function (error) {
-//             // handle error
-//             console.log(error);
-//         })
-// }
-
-// teams('357');
-//357
-
-// 10174 - ID GABIGOL
+// getPlayers(`${teams[0].team_id}`, `${teams[0].team_name}`)
 
 
 
+teams.forEach(e => {
+    setTimeout(()=>{
+        getPlayers(`${e.team_id}`, `${e.name}`)
+    }, 5000)
+});
 
- let player = async (player_id, year) => {
-     await playersService.getStaticsByPlayerAndSeason(player_id,year)
-         .then(function (res) {
-             console.log(res.data);
-             let data = JSON.stringify(res.data)
-             fs.writeFileSync('./Files/StaticsPlayerByYear.json', data)
-         })
-         .catch(function (error) {
-             // handle error
-             console.log(error);
-         })
- }
 
-player('10168','2019');
+
 
 
 
