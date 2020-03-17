@@ -20,7 +20,7 @@ let getPlayers = async (teamId, teamName) => {
         .then(function (res) {
             let data = res.data.api.players
             console.log(data)
-            fs.writeFileSync(`./Files/SerieA/JogadoresPorTime/${teamName}.json`, JSON.stringify(data));
+            fs.writeFileSync(`./Files/SerieA/JogadoresPorTimeSerieA/${teamName}.json`, JSON.stringify(data));
         })
         .catch(function (error) {
             // handle error
@@ -32,14 +32,10 @@ brazilSerieA.api.teams.forEach(e => {
     team = {
         team_id: e.team_id,
         name: e.name,
-        code: e.code,
         logo: e.logo,
         country: e.country,
-        is_national: e.is_national,
         founded: e.founded,
         venue_name: e.venue_name,
-        venue_surface: e.venue_surface,
-        venue_address: e.venue_address,
         venue_city: e.venue_city,
         venue_capacity: e.venue_capacity
     }
