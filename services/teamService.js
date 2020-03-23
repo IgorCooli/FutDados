@@ -12,7 +12,6 @@ const getTeamsByLeagueId = (leagueId) => {
             }
         )
 };
-module.exports = { getTeamsByLeagueId: getTeamsByLeagueId };
 
 
 
@@ -28,6 +27,8 @@ const getTeamByTeamId = (teamId) => {
             }
         )
 };
-module.exports = { getTeamByTeamId: getTeamByTeamId };
+module.exports = { getTeamByTeamId: getTeamByTeamId 
+                    ,getTeamsByLeagueId: getTeamsByLeagueId
+                };
 
 
