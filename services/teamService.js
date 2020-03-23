@@ -1,5 +1,19 @@
 const axios = require('axios');
 
+const getTeamStatiticsByTeamIdAndLeagueId = (teamId, leagueId) => {
+    return axios
+        .get(`https://api-football-v1.p.rapidapi.com/v2/statistics/${leagueId}/${teamId}`,
+            {
+                headers:
+                {
+                    "x-rapidapi-host": "api-football-v1.p.rapidapi.com",
+                    "x-rapidapi-key": "912568d03bmsh4ec2e0fc892ec77p15231bjsn2f96694ddd90"
+                }
+            }
+        )
+};
+
+
 const getTeamsByLeagueId = (leagueId) => {
     return axios
         .get(`https://api-football-v1.p.rapidapi.com/v2/teams/league/${leagueId}`,
@@ -29,6 +43,7 @@ const getTeamByTeamId = (teamId) => {
 };
 module.exports = { getTeamByTeamId: getTeamByTeamId 
                     ,getTeamsByLeagueId: getTeamsByLeagueId
+                    ,getTeamStatiticsByTeamIdAndLeagueId : getTeamStatiticsByTeamIdAndLeagueId
                 };
 
 

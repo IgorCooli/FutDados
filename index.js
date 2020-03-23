@@ -79,18 +79,32 @@ const teamService = require('./services/teamService');
 
 
 
-let tupi = async (teamId) => {
-    await playersService.getPlayersByTeamId(teamId)
-        .then(function (res) {
-            console.log(res.data);
-            let data = JSON.stringify(res.data)
-            fs.writeFileSync('./Files/SerieD/tupi.json', data)
-        })
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-        })
+// let tupi = async (teamId) => {
+//     await playersService.getPlayersByTeamId(teamId)
+//         .then(function (res) {
+//             console.log(res.data);
+//             let data = JSON.stringify(res.data)
+//             fs.writeFileSync('./Files/SerieD/tupi.json', data)
+//         })
+//         .catch(function (error) {
+//             // handle error
+//             console.log(error);
+//         })
+// }
+
+// tupi('796');
+
+let tupiPlayers = async(teamId, leagueId) => {
+    await teamService.getTeamStatiticsByTeamIdAndLeagueId(teamId, leagueId)
+    .then(function (res) {
+        console.log(res.data);
+        let data = JSON.stringify(res.data)
+        fs.writeFileSync('./Files/SerieD/tupiStatistics.json', data)
+    })
+    .catch(function (error) {
+        // handle error
+        console.log(error);
+    })
 }
 
-tupi('796');
-
+tupiPlayers('796','1007')
